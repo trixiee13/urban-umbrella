@@ -1,0 +1,68 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Urban umbrella</title>
+  <meta name="description" content="Github-generated name for a little piece of code that will make you think you can compare with your competition. You can't.">
+
+  <link rel="icon" href="favicon.ico">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="styles.css">
+
+  <script src="https://kit.fontawesome.com/c7b6a166ed.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="bg-grey text-dark">
+  <header>
+    <h1>
+      Who is <span class="text-green">monster.com</span> competing with?
+    </h1>
+    <p>
+      You can explore all competitor data for the tracked keywords. For now, <b>select at least 3 direct competitors</b> to help us process potentially low relevance keywords.
+    </p>
+  </header>
+  <main>
+    <form>
+      <label for="competitor-input">
+        <i class="fas fa-flag-checkered" aria-hidden="true"></i>
+        <span>Initial competitor selection</span>
+      </label>
+      <div class="pill">
+       <b id="competitors-count" class="text-green">0</b>
+       <span>selected</span>
+      </div>
+      <input id="competitor-input" type="text" placeholder="Add new competitor (e.g seomonitor.com)"/>
+      <button type="submit" id="action-add-url">
+        <i class="fas fa-level-down-alt fa-rotate-90" aria-hidden="true"></i>
+        <span>Enter</span>
+      </button>
+      <div class="input-after"></div>
+      <div class="form-error" id="form-error"></div>
+    </form>
+
+    <hr/>
+
+    <div class="competitors-wrapper" id="added-competitors-wrapper"></div>
+
+    <button id="action-compare">
+      <i class="fas fa-level-down-alt fa-rotate-90" aria-hidden="true"></i>
+      <span>Compare</span>
+    </button>
+  </main>
+
+  <footer>
+    <p>Logos provided by <a href="https://clearbit.com/" target="_blank">Clearbit</a>.</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
